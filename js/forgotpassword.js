@@ -22,7 +22,7 @@ let forgotPassword = () => {
     // Password reset email sent!
     // ..
     alert(`Password reset link send to ${forgotPasswordEmail.value}`)
-    window.location.href = '/home.html';
+    window.location.href = '/index.html';
   })
   .catch((error) => {
     const errorCode = error.code;
