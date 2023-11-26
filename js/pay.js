@@ -58,5 +58,5 @@ function confirmPayment() {
 
 function closePaymentSuccessful() {
   $("#successful").modal("hide");
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
