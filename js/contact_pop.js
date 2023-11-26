@@ -8,7 +8,7 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       alert("Thank you! your form is submitted successfully.");
-      window.location.href = "home.html";
+      window.location.href = "index.html";
     })
     .catch((error) => console.error("Error!", error.message));
 });
@@ -16,5 +16,5 @@ form.addEventListener("submit", (e) => {
 //!redirect
 function redirectToHomePage() {
   // Redirect to the home page URL
-  window.location.href = "home.html";
+  window.location.href = "index.html";
 }
