@@ -19,7 +19,7 @@ document.addEventListener("click", function (event) {
 function performSearch(query) {
   // Example: Perform a simple search
   const productList = [
-    { name: "Home", link: "home.html" },
+    { name: "Home", link: "index.html" },
     { name: "Gift", link: "gift.html" },
     { name: "Order", link: "order.html" },
     { name: "Pay", link: "pay.html" },
