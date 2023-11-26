@@ -91,7 +91,7 @@ async function loginWithGoogle(){
   const result =  await firebase.auth().signInWithPopup(provider)
   .then(()=>{
     alert("Google Sign in successful"),
-    window.location.href = 'home.html'
+    window.location.href = 'index.html'
 })
   console.log(result)
   }catch(err){
