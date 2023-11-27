@@ -141,4 +141,3 @@ function displayUsername() {
       alert('No email stored.');
   }
 }
-
