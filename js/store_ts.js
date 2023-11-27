@@ -103,8 +103,16 @@ function showStores(data) {
     location = location.toLowerCase();
     if(location==="")
     {
-        if((lati=8.5588705) && (long=76.8777134)){
+        if((lati=8.552448) && (long=76.8868352)){
             location="trivandrum";
+            var stores = response.filter(function (element) { return element.location.toLowerCase() === location; });
+            var nearby = document.getElementById("near-by");
+            if (nearby) {
+                nearby.textContent = "Nearby(".concat(stores.length, ")");
+            }
+            for (var i = 0; i < stores.length; i++) {
+                createCards(stores, i);
+            }
         }
     }
     else if (location === "kochi" || location === "trivandrum") {
